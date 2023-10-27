@@ -18,8 +18,8 @@ For the benchmark, each mention variation was populated by sampling 5 papers fro
 - An enrichment notebook that finds variations of a given mention in CZI, samples 5 publications and enriches them with OpenAlex authors and concepts (with confidence > 0.5)
 
 ## Next steps
-- Merge Kai Li's 500 annotation benchmark in the benchmark (enriching it with topics and authors)
-- Merge additional 120 mentions for the tool `star`
+- Merge Kai Li's 500 annotation benchmark in the benchmark (in the `to_merge` folder)
+- Merge additional 120 mentions for the tool `star` (in the `to_merge` folder)
 - Include data from Scicrunch annotators (see [10.5281/zenodo.10048228](http://doi.org/10.5281/zenodo.10048228))
 - Include problematic annotations from SoftwareKG (https://data.gesis.org/softwarekg/)
 - Include the disambiguation data from [CZI](https://datadryad.org/stash/dataset/doi:10.5061/dryad.6wwpzgn2c)
