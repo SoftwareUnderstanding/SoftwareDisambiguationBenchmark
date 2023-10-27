@@ -5,20 +5,21 @@ Software names are challenging to link together: tools may use different variati
 In this project we aim to create a benchmark to validate clustering approaches for tool disambiguation. The benchmark includes challenging tool mentions (extracted from the CZI dataset) validated by different annotators, as well as an initial clustering analysis. 
 
 ## Methodology
-- This will describe how we have managed to identify problematic instances. This has been accomplished by two different means:
+This will describe how we have managed to identify problematic instances. This has been accomplished by two different means:
     - By looking into those that have many URLs are associated with each tool.
     - Bu looking into tools with many variations, which may be difficult to cluster together.
 
-For the benchmark, each mention variation was populated by sampling 5 papers from CZI, and validating them manually. Each paper was enricher
+For the benchmark, each mention variation was populated by sampling 5 papers from CZI, and validating them manually. Each paper was enriched from OpenAlex with concepts and authors
 
 ## Outcomes
 - First version of the benchmark (111 mention variations from 15 different groups)
-- An additional 500 hand annotated mentions for the `PRISM` tool by Kai Li.
-- First results bu Jinseok, using the [ANDez](https://codeocean.com/capsule/3498527/tree/v1). See README in ANDez4SND folder
+- An additional 500 hand annotated mentions for the `PRISM` tool prpovided by Kai Li.
+- First results bu Jinseok, using the [ANDez](https://codeocean.com/capsule/3498527/tree/v1). See README in the `/ANDez4SND` folder
 - An enrichment notebook that finds variations of a given mention in CZI, samples 5 publications and enriches them with OpenAlex authors and concepts (with confidence > 0.5)
 
 ## Next steps
 - Merge Kai Li's 500 annotation benchmark in the benchmark (enriching it with topics and authors)
+- Merge additional 120 mentions for the tool `star`
 - Include data from Scicrunch annotators (see [10.5281/zenodo.10048228](http://doi.org/10.5281/zenodo.10048228))
 - Include problematic annotations from SoftwareKG (https://data.gesis.org/softwarekg/)
 - Include the disambiguation data from [CZI](https://datadryad.org/stash/dataset/doi:10.5061/dryad.6wwpzgn2c)
